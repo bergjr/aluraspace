@@ -1,0 +1,27 @@
+@media screen and (min-width: 744px) {
+    .main {
+        display: grid;
+        grid-template-areas: "nav-bar nav-bar"
+                             "main-gallery side-gallery";
+        grid-template-rows: 48px auto;
+        grid-template-columns: 70% 30%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main {
+        grid-template-areas: ". title title"
+                             ". nav-bar side-gallery"
+                             ". main-gallery side-gallery";
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 48px 48px auto;
+    }
+
+    .main__titulo {
+        grid-area: title;
+        font-size: 1.5em;
+        color: #7B78E5;
+        margin-left: 1.5rem;
+        font-family: var(--font);
+    }
+}    

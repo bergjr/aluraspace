@@ -1,0 +1,141 @@
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 4rem 1.25rem;
+    font-family: var(--font);
+}
+
+.gallery h2 {
+    font-size: 1.3em;
+    color: #7B78E5;
+}
+
+.gallery__container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.gallery__container__item {
+    width: 350px;
+    height: 254px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000000;
+    flex-grow: 2;
+}
+
+/* within item*/ 
+
+.item__description {
+    background-color: #04244F;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1em;
+}
+
+.item__tag {
+    position: absolute;
+    top: 1.4rem;
+    right: 1.4rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+}
+
+.item__description__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: left;
+}
+
+.item__description__text h3 {
+    font-weight: 600;
+}
+
+
+.item__description__buttons {
+    width: 50%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    gap: 3.3rem; 
+}
+
+@media screen and (min-width: 744px) {
+    .main-gallery {
+        grid-area: main-gallery;
+    }
+
+    .side-gallery {
+        grid-area: side-gallery;
+    }
+    
+    .gallery__container {
+        justify-content: start;
+    }
+
+    .main-gallery .gallery__container__item {
+        width: 227px;
+        height: 170px;
+    }  
+    
+    .side-gallery .gallery__container__item {
+        width: 180px;
+        height: 115px; 
+    }
+
+    .item__description {
+        font-size: 14px;
+    }
+
+    .item__description__buttons {
+        width: 25%;
+        gap: 10px;
+        padding-right: 1rem;
+    }
+
+    .item__description__text {
+        width: 65%;
+    }  
+    
+    .item__tag {
+        width: 54px;
+        height: 12px;
+        font-size: 14px;
+        padding: 0.5rem;
+    }    
+}   
+
+@media screen and (min-width: 1440px) {
+    .main-gallery h2 {
+        display: none;
+    }
+    
+    .main-gallery .gallery__container__item {
+        width: 258px;
+        height: 205px;
+    }
+
+    .side-gallery .gallery__container__item {
+        width: 254px;
+        height: 147px;
+    }
+    
+    .gallery {
+        margin-top: 1rem;
+    }
+    
+}    

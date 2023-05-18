@@ -1,0 +1,10 @@
+.logo {
+    grid-area: logo;
+    justify-self: end;
+}
+
+@media screen and (min-width: 744px) {
+    .logo {
+        justify-self: start;
+    }
+}

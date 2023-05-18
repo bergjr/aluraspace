@@ -1,0 +1,49 @@
+.menu-list {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: auto;
+    background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
+
+}
+
+.menu-list__container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    color: #FFFFFF;
+    font-family: 'Raleway';
+}
+
+.menu-list__container__item a{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.menu-list__container__item:nth-child(1) {
+    align-self: flex-end;
+}
+
+@media screen and (min-width: 744px) {
+    .menu-list {
+        position: static;
+        background: transparent;
+        font-size: 1.5em;
+        grid-area: menu;
+    }    
+
+    /* Button to close menu on the mobile version */
+    .menu-list__container__item:nth-child(1) {
+        display: none;
+    }
+
+    .menu-list__container__item a {
+        padding-right: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+}    

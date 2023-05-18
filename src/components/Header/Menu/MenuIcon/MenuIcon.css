@@ -1,0 +1,16 @@
+.menu-container {
+    grid-area: menu;
+    margin-right: auto;
+}
+
+.menu-container__icon {
+    background: url(/public/assets/menu.png) no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+@media screen and (min-width: 744px) {
+    .menu-container {
+        display: none;
+    }
+}

@@ -1,0 +1,18 @@
+.veja-mais {
+    text-align: center;
+    width: 100%;
+    border: 2px solid #7B78E5;
+    background: transparent;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-family: 'Raleway';
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1440px) {
+    .main-gallery .veja-mais {
+        display: none;
+    }
+}
